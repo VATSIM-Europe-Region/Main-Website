@@ -2,24 +2,25 @@
 
 namespace App\Models;
 
-use App\Http\Controllers\VatsimOAuthController;
-use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Log;
-use League\OAuth2\Client\Token\AccessToken;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use HasFactory, Notifiable;
 
     /**
-     * Allow all attributes to be mass assigned.
+     * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $guarded = [];
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -27,42 +28,16 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
+        'password',
         'remember_token',
     ];
 
-    public function discord()
-    {
-        return $this->hasOne(Discord_Account::class);
-    }
-
-    public function getFullNameAttribute()
-    {
-        return $this->name_first.' '.$this->name_last;
-    }
-
-    public function getTokenAttribute()
-    {
-        if ($this->access_token === null) return null;
-        else {
-            $token = new AccessToken([
-                'access_token' => $this->access_token,
-                'refresh_token' => $this->refresh_token,
-                'expires' => $this->token_expires,
-            ]);
-
-            if ($token->hasExpired()) {
-                $token = VatsimOAuthController::updateToken($token);
-            }
-
-            // Can't put it inside the "if token expired"; $this is null there
-            // but anyway Laravel will only update if any changes have been made.
-            $this->update([
-                'access_token' => ($token) ? $token->getToken() : null,
-                'refresh_token' => ($token) ? $token->getRefreshToken() : null,
-                'token_expires' => ($token) ? $token->getExpires() : null,
-            ]);
-
-            return $token;
-        }
-    }
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
 }

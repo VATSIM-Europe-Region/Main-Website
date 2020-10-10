@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,16 +14,5 @@
 */
 
 Route::get('/', function () {
-    return view('main');
-})->name('home');
-
-Route::middleware('guest')->group(function () {
-    Route::get('login/old', 'Auth\SSOLoginController@login')->name('auth.login.old');
-    Route::get('login/old/verify', 'Auth\SSOLoginController@verifyLogin')->name('auth.login.old.verify');
-    Route::get('login', 'Auth\LoginController@login')->name('auth.login');
-});
-
-Route::middleware('auth')->group(function () {
-    Route::get('logout', 'Auth\LoginController@logout')->name('auth.logout');
-    Route::resource('discord', 'DiscordController')->only('create');
+    return view('welcome');
 });
