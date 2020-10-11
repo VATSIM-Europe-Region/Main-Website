@@ -1,0 +1,49 @@
+:root {
+    --main-orange: #e49e63;
+    --main-orange-hover: #d88745;
+}
+
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active::after {
+    background-color: var(--main-orange) !important;
+}
+
+.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
+    color: var(--main-orange);
+}
+
+.courses-title {
+    background-color: var(--main-orange) !important;
+}
+
+.btn-primary {
+    background-color: var(--main-orange) !important;
+    border: 1px solid var(--main-orange);
+}
+
+.btn-primary:hover {
+    background-color: var(--main-orange-hover) !important;
+    border: 1px solid var(--main-orange);
+}
+
+.custom-icon-wrap.custom-icon-light .custom-icon-inner, .custom-icon-wrap .custom-icon-inner {
+    background-color: var(--main-orange);
+    border: 1px solid var(--main-orange);
+}
+
+.custom-icon-wrap.custom-icon-light .custom-icon-inner:hover, .custom-icon-wrap .custom-icon-inner:hover {
+    background-color: var(--main-orange-hover);
+    border: 1px solid var(--main-orange);
+}
+
+.custom-icon-wrap h3 {
+    color: #343a40;
+    font-size: 1rem;
+}
+
+a {
+    color: var(--main-orange);
+}
+
+a:hover {
+    color: var(--main-orange-hover);
+}
