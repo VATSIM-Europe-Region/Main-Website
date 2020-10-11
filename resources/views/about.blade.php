@@ -22,12 +22,12 @@
 
             <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
               <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-map"></span></span></div>
-              <div><h3 class="m-0">Largest Region of VATSIM</h3></div>
+              <div><h3 class="m-0">Largest and most active Region of VATSIM</h3></div>
             </div>
 
             <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
               <div class="mr-3"><span class="custom-icon-inner"><span class="icon icon-graduation-cap"></span></span></div>
-              <div><h3 class="m-0">Well trained staff and mentors</h3></div>
+              <div><h3 class="m-0">Well trained Staff and Mentors</h3></div>
             </div>
 
           </div>

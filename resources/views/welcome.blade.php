@@ -51,7 +51,7 @@
     .br {
       width: 30%;
       height: 2px;
-      background-color: rgb(184, 184, 184);
+      background-color: rgb(235, 235, 235);
       margin-left: auto;
       margin-right: auto;
     }

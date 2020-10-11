@@ -14,7 +14,7 @@
           <div class="teacher text-center">
             <img src="{{ asset('theme/images/staff-placeholder.jpg') }}" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
             <div class="py-2">
-              <h3 class="text-black">Simon Irvine</h3>
+              <a href="mailto:s.irvine@vatsim.net"><h3 class="text-black">Simon Irvine</h3></a>
               <p class="position">VP Europe, Middle East and Africa Region</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
             </div>
@@ -25,7 +25,7 @@
           <div class="teacher text-center">
             <img src="{{ asset('theme/images/staff-placeholder.jpg') }}" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
             <div class="py-2">
-              <h3 class="text-black">Nick Marinov</h3>
+              <a href="mailto:n.marinov@vatsim.net"><h3 class="text-black">Nick Marinov</h3></a>
               <p class="position">Assistant to the VP Europe, Middle East and Africa Region</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
             </div>
@@ -36,7 +36,7 @@
           <div class="teacher text-center">
             <img src="{{ asset('theme/images/staff-placeholder.jpg') }}" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
             <div class="py-2">
-              <h3 class="text-black">Nikolas Goerlitz</h3>
+              <a href="mailto:n.goerlitz@vatsim.net"><h3 class="text-black">Nikolas Goerlitz</h3></a>
               <p class="position">Assistant to the VP Europe, Middle East and Africa Region</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
             </div>
