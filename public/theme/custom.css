@@ -22,7 +22,7 @@
 
 .btn-primary:hover {
     background-color: var(--main-orange-hover) !important;
-    border: 1px solid var(--main-orange);
+    border: 1px solid var(--main-orange-hover);
 }
 
 .custom-icon-wrap.custom-icon-light .custom-icon-inner, .custom-icon-wrap .custom-icon-inner {
