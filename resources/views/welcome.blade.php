@@ -33,6 +33,10 @@
     <br><br>
     <div class="br"></div>
 
+    @include ('policies')
+
+    <div class="br"></div>
+
     @include ('staff')
 
     <div class="br" style="margin-top: -75px;"></div>

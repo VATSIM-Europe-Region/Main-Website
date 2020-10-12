@@ -45,7 +45,7 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="index.html">VATEMEA</a></div>
+        <div class="site-logo mr-auto w-25"><a href="#home-section"><img src="{{ asset('theme/images/region-logo.png') }}" alt="EMEA Logo" style="height: 50px;"></a></div>
 
           <div class="mx-auto text-center">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -53,7 +53,7 @@
                 <li><a href="#home-section" class="nav-link">Home</a></li>
                 <li><a href="#divisions-section" class="nav-link">Divisions</a></li>
                 <li><a href="#about-section" class="nav-link">About Us</a></li>
-                <li><a href="#teachers-section" class="nav-link">Policies</a></li>
+                <li><a href="#policies-section" class="nav-link">Policies</a></li>
                 <li><a href="#staff-section" class="nav-link">Staff</a></li>
                 <li><a href="#dashboard-section" class="nav-link">Dashboard</a></li>
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
